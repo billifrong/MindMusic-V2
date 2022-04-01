@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+header{
+    font-size: 35px;
+    -webkit-text-stroke: 0.3px purple;
+    float: left;
+    color: pink;
+    font-weight: bold;
+    margin: 20px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+nav ul li{
+    font-family: 'Lobster', cursive;
+    color: rgb(red, green, blue);
+    float: right;
+    margin: 20px 2px 2px 2px;
+    width: 150px;
+    flex-wrap: nowrap;
+}
+
+nav ul li :hover{
+    background-color:pink;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+footer{
+    font-size: 25px;
+    position: fixed;
+    bottom:0px;
+ }
+
+/* Buscar */
+
+#search input[type=text]{
+    width:350%;
+    height:40px;
+    border-radius:30px;
+    border: solid;
+    border-color: rgb(250, 175, 250);
+    color: blueviolet;
+}
+
+#search{
+    float: left;
+    margin-top: 20%;
+    margin-left: 4%;
+}
+#resultados-search{
+    float: left;
+    margin-top: 30%;
+    margin-bottom: 5%;
+    margin-left: -10%;
+}   
+#fotos-search{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    font-size: 40px;
+    color: white;
+    border: 10px solid black;
+    -webkit-text-stroke: 0.8px purple;
+    font-family: 'Merriweather', serif;
+}
+#resultados-search img{
+    width: 140px;
+    height: 140px;
+    border: 10px solid black;
+}
+
+
+::placeholder{
+    font-size: 20px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+#icon{
+    font: var(--fa-font-solid);
+    content: "\f007";
+}
+
+#pag-buscar{
+    background-image: url(/images/fondo-buscar.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center;
+    background-position-y: -10%;
+}
+
+/* favoritos */
+
+#favoritos-nombre1{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+}
+
+#favoritos-nombre2{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+}
+
+#favoritos-nombre3{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+}
+
+#FavAudioPlayer{
+    float: left;
+    margin-left: -10%;
+    margin-top: 5%;
+}
+
+#pag-favoritos{
+    background-image: url(/images/fondo-favoritos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -30%;
+}
+
+#estrella{
+    margin-top: -30%;
+    margin-left: 70%;
+}
+
+#estrella li{
+    font-size: 50px;
+    -webkit-text-stroke: 0.3px violet;
+    float: left;
+    color: white;
+    font-weight: bold;
+    margin: -10px;
+    font-family: 'Dela Gothic One', cursive;
+    margin-top: 5px;
+}
+
+#footer-favoritos{
+    font-size: 25px;
+    position: fixed;
+    bottom:0px;
+    color: white;
+ }
+
+ /*descubrir*/
+ #texto-descubrir{
+    float: left;
+    margin-top: 10%;
+    margin-left: 23%;
+    font-size: 50px;
+    -webkit-text-stroke: 0.3px violet;
+ }
+ #texto-descubrir img{
+    margin-left: -100px;
+    margin-top: -10%;
+ }
+#pag-descubrir{
+    background-image: url(/images/fondo-descubrir.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+ #top-semana{
+    float: left;
+    margin-top: 5%;
+    margin-left: 3%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#top-relax{
+    float: left;
+    margin-top: 10%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*playlist*/
+#pag-playlist{
+    background-image: url(/images/fondo-playlist.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -80%;
+}
+
+#texto-playlist{
+    float: left;
+    margin-top: 8%;
+    margin-left: 20%;
+    color: white;
+    font-size: 60px;
+    -webkit-text-stroke: 0.3px violet;
+}
+
+#playlist-guardadas{
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+}   
+
+#fotos-playlist{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 0.5px purple;
+    font-family: 'Merriweather', serif;
+}
+#playlist-guardadas img{
+    width: 180px;
+    height: 180px;
+    border: 10px solid black;
+}
+
+#footer-playlist{
+    font-size: 25px;
+    position: fixed;
+    bottom:0px;
+    color: white;
+ }
