@@ -11,8 +11,9 @@
         <!--Estilos-->
         <link rel="stylesheet"  href="css/reset.css" type="text/css"/>
         <link rel="stylesheet"  href="css/estilos.css" type="text/css"/>
+        <link rel="stylesheet"  href="css/playlist.css" type="text/css"/>
         <script src="https://kit.fontawesome.com/95d10ee791.js" crossorigin="anonymous"></script>
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--  <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -22,49 +23,92 @@
     <!--Cabeza + Menu-->
     <body id="pag-playlist">
         <header>
-            <h1>MindMusic</h1>
+            <h1><a href="index.html">MindMusic</a></h1>
         </header>
 
-        <nav>
-            <div>
-                <ul id="secciones">
-                    <li><a href="buscar.html" title="Buscar">Buscar</a></li>
-                    <li><a href="descubrir.html" title="Descubrir">Descubrir</a></li>
-                    <li><a href="playlist.html" title="Playlist">Playlist</a></li>
-                    <li><a href="favoritos.html" title="Favoritos">Favoritos</a></li>
-                    <li><a href="index.html" title="inicio">Inicio</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul id="secciones" class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" title="inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html" title="Favoritos">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="playlist.html" title="Playlist">Playlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descubrir.html" title="Descubrir">Descubrir</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="buscar.html" title="Buscar" >Buscar</a></li>
                 </ul>
-            </div> 
-        </nav>
+              </div>
+            </div>
+          </nav>
 
-        <div id="texto-playlist">
-            <p>𝄞 Playlist 𝄞</p>
+        <div id="texto-playlist" class="container">
+            <div class="row">
+                <div class="col-md-4 col-sd-4">
+                    <a></a>
+                </div>
+                <div class="col-md-8 col-sd-8">
+                    <p>𝄞 Playlist 𝄞</p>
+                </div>
+            </div>
+            
         </div>
 
-        <div id="playlist-guardadas">
-            <ul>
-                <li id="fotos-playlist">
-                    <img src="/images/relajante.jpg" alt="relajante">
-                    <p>1. David Bisbal - A Partir De Hoy</p>
-                    <p>2. James Blunt - Stay the Night</p>
-                    <p>3. Attaque 77 - Arrancacorazones</p>
-                    <p>4. Manuel García - Tanto Creo en Tí</p>
-                </li>
-                <li id="fotos-playlist">
-                    <img src="/images/exitos80.jpg" alt="80s">
-                    <p>1. Michael Jackson - Beat It</p>
-                    <p>2. Pet Shop Boys - West End girls</p>
-                    <p>3. A-ha - Take on me</p>
-                    <p>4. The Cars - Drive</p>
-                </li>
-                <li id="fotos-playlist">
-                    <img src="/images/top-reggaeton.jpg" alt="top reggaeton">
-                    <p>1. Bad Bunny - Safaera</p>
-                    <p>2. Pailita - Noche Buena</p>
-                    <p>3. El Barto - Flaytiando</p>
-                    <p>4. Cris Mj - Noche en Medellin</p>
-                </li>
-            </ul>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            + Agregar Playlist
+        </button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Playlist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Nombre Playlist</h5>
+                    <input type="text">
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar Playlist</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="playlist-guardadas" class="container">
+            <div class="row">
+                <div class="col-md-12 col-sd-4">
+                    <ul>
+                        <li id="fotos-playlist">
+                            <img src="/images/relajante.jpg" alt="relajante">
+                            <p>1. David Bisbal - A Partir De Hoy</p>
+                            <p>2. James Blunt - Stay the Night</p>
+                            <p>3. Attaque 77 - Arrancacorazones</p>
+                            <p>4. Manuel García - Tanto Creo en Tí</p>
+                        </li>
+                        <li id="fotos-playlist">
+                            <img src="/images/exitos80.jpg" alt="80s">
+                            <p>1. Michael Jackson - Beat It</p>
+                            <p>2. Pet Shop Boys - West End girls</p>
+                            <p>3. A-ha - Take on me</p>
+                            <p>4. The Cars - Drive</p>
+                        </li>
+                        <li id="fotos-playlist">
+                            <img src="/images/top-reggaeton.jpg" alt="top reggaeton">
+                            <p>1. Bad Bunny - Safaera</p>
+                            <p>2. Pailita - Noche Buena</p>
+                            <p>3. El Barto - Flaytiando</p>
+                            <p>4. Cris Mj - Noche en Medellin</p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
 
         </div>
         
@@ -77,5 +121,6 @@
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square" style="color: black;"></i></a>
             <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square" style="color: black;"></i></a>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

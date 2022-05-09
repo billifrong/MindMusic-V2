@@ -1,0 +1,80 @@
+#search input[type=text] {
+  width: 350%;
+  height: 40px;
+  border-radius: 30px;
+  border: solid;
+  border-color: #faaffa;
+  color: blueviolet;
+}
+
+#search {
+  float: left;
+  margin-top: 15%;
+  margin-left: 4%;
+}
+
+#resultados-search {
+  margin-top: 30%;
+}
+
+#fotos-search {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  font-size: 40px;
+  color: white;
+  border: 10px solid black;
+  -webkit-text-stroke: 0.8px purple;
+  font-family: 'Merriweather', serif;
+}
+
+#resultados-search img {
+  width: 140px;
+  height: 140px;
+  border: 10px solid black;
+}
+
+::-webkit-input-placeholder {
+  font-size: 20px;
+  color: blueviolet;
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  font-size: 20px;
+  color: blueviolet;
+  text-align: center;
+}
+
+::-ms-input-placeholder {
+  font-size: 20px;
+  color: blueviolet;
+  text-align: center;
+}
+
+::placeholder {
+  font-size: 20px;
+  color: blueviolet;
+  text-align: center;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+#icon {
+  font: var(--fa-font-solid);
+  content: "\f007";
+}
+
+#pag-buscar {
+  background-image: url(/images/fondo-buscar.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  background-position-y: -10%;
+}
+/*# sourceMappingURL=buscar.css.map */

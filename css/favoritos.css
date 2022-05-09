@@ -1,0 +1,60 @@
+#favoritos-nombre1 {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px black;
+  color: white;
+}
+
+#favoritos-nombre2 {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px black;
+  color: white;
+}
+
+#favoritos-nombre3 {
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px black;
+  color: white;
+}
+
+#FavAudioPlayer {
+  float: left;
+  margin-top: 5%;
+}
+
+#pag-favoritos {
+  /*
+    background-image: url(/images/fondo-favoritos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -30%;
+    */
+  background-color: #ffe0bb;
+}
+
+#estrella {
+  margin-top: -40%;
+  margin-left: 70%;
+}
+
+#estrella li {
+  font-size: 50px;
+  -webkit-text-stroke: 0.3px violet;
+  float: left;
+  color: white;
+  font-weight: bold;
+  margin: -10px;
+  font-family: 'Dela Gothic One', cursive;
+  margin-top: 5px;
+}
+
+#footer-favoritos {
+  font-size: 25px;
+  position: fixed;
+  bottom: 0px;
+  color: black;
+}
+/*# sourceMappingURL=favoritos.css.map */

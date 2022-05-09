@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+.col h2 {
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+  margin: 5;
+}
+
+.bg {
+  background-image: url(/images/logo_login.png);
+  background-position: center center;
+}
+
+#registrarse-form {
+  background-color: green;
+}
+/*# sourceMappingURL=sesion.css.map */

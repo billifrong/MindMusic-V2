@@ -11,7 +11,19 @@
         <!--Estilos-->
         <link rel="stylesheet"  href="css/reset.css" type="text/css"/>
         <link rel="stylesheet"  href="css/estilos.css" type="text/css"/>
+        <link rel="stylesheet"  href="css/descubrir.css" type="text/css"/>
+        <link rel="stylesheet" href="css/audioplayer.css">
         <script src="https://kit.fontawesome.com/95d10ee791.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!-- Probando jquery 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                 alert("Hola Mundo con jQuery!");
+            });
+        </script>-->
 
         <!--  <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,52 +34,85 @@
     <!--Cabeza + Menu-->
     <body id="pag-descubrir">
         <header>
-            <h1>MindMusic</h1>
+            <h1><a href="index.html">MindMusic</a></h1>
         </header>
 
-        <nav>
-            <div>
-                <ul id="secciones">
-                    <li><a href="buscar.html" title="Buscar">Buscar</a></li>
-                    <li><a href="descubrir.html" title="Descubrir">Descubrir</a></li>
-                    <li><a href="playlist.html" title="Playlist">Playlist</a></li>
-                    <li><a href="favoritos.html" title="Favoritos">Favoritos</a></li>
-                    <li><a href="index.html" title="inicio">Inicio</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul id="secciones" class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" title="inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favoritos.html" title="Favoritos">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="playlist.html" title="Playlist">Playlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descubrir.html" title="Descubrir">Descubrir</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="buscar.html" title="Buscar" >Buscar</a></li>
                 </ul>
-            </div> 
-        </nav>
+              </div>
+            </div>
+          </nav>
 
         <div id="texto-descubrir">
-            <p>Descubrir</p>
-            <img src="/images/lupa-descubrir.jpg" width="20%">
+            <p>Descubrir 🔎</p>
         </div>
 
-        <div id="top-semana">
-            <img src="/images/top-semana.jpg" width="40%">
-            <p>1. Cris Mj - Noche Medellin</p>
-            <p>2. Young Cister - Algo de Ti</p>
-            <p>3. Melendi - Tu Jardín Con Enanitos</p>
-            <p>4. Chayanne - Dejaría todo</p>
-            <p>5. Shakira - Waka Waka</p>
-            <p>6. Marcianeke - Dimelo Ma</p>
-            <p>7. Ak420 - Skyline</p>
-            <p>8. Ricky Martin - Livin' la Vida Loca</p>
-            <p>9. Tego Calderon - Pa que Retozen</p>
-            <p>10. Alok - Tú</p>
-        </div>
+        <div class="container">
+            <div class="single">
+                <div id="music-1" class="music active">
+                    <img src="/images/top-semana.jpg">
+                    <div class="music-info">
+                        <h2>Lo Mejor de la Semana</h2>
+                        <h3>Noche Medellin</h3>
+                    </div>
+                    <div class="player">
+                        <p class="time">00:00:00</p>
+                        <div class="seekbar-container"><div class="seekbar-inner" style="width: 0;" ></div></div>
+                        <div class="buttons">
+                            <div class="prev"><i class="fas fa-backward"></i></div>
+                            <div class="play"><i class="fas fa-play"></i></div>
+                            <div class="next"><i class="fas fa-forward"></i></div>
+                        </div>
+                    </div>
+                </div>
 
-        <div id="top-relax">
-            <img src="/images/top-relax.jpg" width="40%">
-            <p>1. Drake - Passionfruit</p>
-            <p>2. Adele - Send my love</p>
-            <p>3. Sidecars y Dani Martín - Todos mis males</p>
-            <p>4. Coldplay - Strawberry Swing</p>
-            <p>5. Ed Sheeran - Thinking out loud</p>
-            <p>6. Café del Mar - We can fly</p>
-            <p>7. Travis - Closer</p>
-            <p>8. Vicentico - Solo un Momento</p>
-            <p>9. Eagles - Hotel California</p>
-            <p>10. The Beatles - Let It Be</p>
+                <div id="music-2" class="music">
+                    <img src="/images/top-relax.jpg">
+                    <div class="music-info">
+                        <h2>Top Musica Relajante</h2>
+                        <h3>Noche Medellin</h3>
+                    </div>
+                    <div class="player">
+                        <p class="time">00:00:00</p>
+                        <div class="seekbar-container"><div class="seekbar-inner" style="width: 0;" ></div></div>
+                        <div class="buttons">
+                            <div class="prev"><i class="fas fa-backward"></i></div>
+                            <div class="play"><i class="fas fa-play"></i></div>
+                            <div class="next"><i class="fas fa-forward"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="active" music-id="#music-1">
+                    <img src="/images/top-semana.jpg">
+                    <div>
+                        <h2>Lo mejor de la Semana</h2>
+                        <h3>Noche Medellin</h3>
+                    </div>
+                    <span>00:15</span>
+                </li>
+                <li class="" music-id="#music-2">
+                    <img src="/images/top-relax.jpg">
+                    <div>
+                        <h2>Top Musica Relajante</h2>
+                        <h3>Noche Medellin</h3>
+                    </div>
+                    <span>00:15</span>
+                </li>
+            </ul>
         </div>
 
         <footer>
@@ -76,5 +121,9 @@
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square" style="color: black;"></i></a>
             <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square" style="color: black;"></i></a>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

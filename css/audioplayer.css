@@ -1,0 +1,211 @@
+body.pag-descubrir {
+  width: 100;
+  height: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 100px;
+  height: 550px;
+  background-color: #cdcdcd;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.container .single {
+  width: 100%;
+  height: 380px;
+  padding-top: 5px;
+}
+
+.container .single .music {
+  width: 100%;
+  height: 380px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .single .music img {
+  width: 20%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .single .music .music-info {
+  width: 80%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.container .single .music .music-info h2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.container .single .music .music-info h3 {
+  font-size: 13px;
+  color: #888888;
+  font-weight: 400;
+}
+
+.container .single .music .player {
+  width: 80%;
+  margin-top: 25px;
+}
+
+.container .single .music .player .time {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #777777;
+  font-weight: 300;
+}
+
+.container .single .music .player .seekbar-container {
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #eeeeee;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container .single .music .player .seekbar-container .seekbar-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  background-color: #307672;
+}
+
+.container .single .music .player .buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.container .single .music .player .buttons .play {
+  background-color: #307672;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  color: white;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.container .single .music .player .buttons .next, .container .single .music .player .buttons .prev {
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.container .single .music.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container ul.list {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.container ul.list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  position: relative;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container ul.list li img {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.container ul.list li div {
+  padding-left: 10px;
+}
+
+.container ul.list li div h2 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.container ul.list li div h3 {
+  font-size: 12px;
+  color: #555555;
+  font-weight: 400;
+}
+
+.container ul.list li span {
+  position: absolute;
+  right: 10px;
+  color: #666666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.container ul.list li.active {
+  background-color: #a5a4a0;
+}
+
+.container ul.list li.active span {
+  color: white;
+}
+/*# sourceMappingURL=audioplayer.css.map */

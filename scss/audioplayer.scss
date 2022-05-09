@@ -1,0 +1,153 @@
+body.pag-descubrir{
+    width: 100;
+    height: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100px;
+    height: 550px;
+    background-color: #cdcdcd;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.1);
+    overflow: hidden;
+    
+    .single{
+        width: 100%;
+        height: 380px;
+        padding-top: 5px;
+
+        .music{
+            width: 100%;
+            height: 380px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.2);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img{
+                width: 20%;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+            }
+
+            .music-info{
+                width: 80%;
+                text-align: center;
+                margin-top: 15px;
+                h2{
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 33px;
+                }
+                h3{
+                    font-size: 13px;
+                    color: #888888;
+                    font-weight: 400;
+                }
+            }
+            .player{
+                width: 80%;
+                margin-top: 25px;
+                .time{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                    color: #777777;
+                    font-weight: 300;
+                }
+                .seekbar-container{
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 50px;
+                    background-color: #eeeeee;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    .seekbar-inner{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 4px;
+                        background-color: #307672;
+                    }
+                }
+                .buttons{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 15px;
+                    .play{
+                        background-color: #307672;
+                        border-radius: 50px;
+                        width: 35px;
+                        height: 35px;
+                        color: white;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 8px;
+                        cursor: pointer;
+                    }
+                    .next, .prev{
+                        color: #aaaaaa;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .music.active{
+            display: flex;
+        }
+    }
+    ul.list{
+        padding: 10px;
+        margin-top: 5px;
+        li{
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            position: relative;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            img{
+                width: 80px;
+                border-radius: 10px;
+            }
+            div{
+                padding-left: 10px;
+                h2{
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+                h3{
+                    font-size: 12px;
+                    color: #555555;
+                    font-weight: 400;
+                }
+            }
+            span{
+                position: absolute;
+                right: 10px;
+                color: #666666;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        li.active{
+            background-color: #a5a4a0;
+            span{
+                color: white;
+            }
+        }
+    }
+}
